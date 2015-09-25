@@ -32,9 +32,9 @@ from polardata import *
 def init_log(progargs):
     """ Initializes the file log and messages format. 
     
-    Keyword arguments:
-    progargs - ProgramArguments object, it contains the information of all 
-        program arguments received.
+    Args:
+        progargs - ProgramArguments object, it contains the information of all 
+            program arguments received.
     
     """ 
     
@@ -70,7 +70,7 @@ def data_is_valid(data_read):
     of the data.
     The second line must be an array of real numbers with a given length.
     
-    Keyword arguments:
+    Args:
         data - The data read.
         
     Returns:
@@ -115,7 +115,7 @@ def read_data_files(path):
     Each file must contain a first line with the title for the data and a
     second line with the list of measures taken.
     
-    Keyword arguments:
+    Args:
         path - The path where the files are read.
         
     Returns:
@@ -173,7 +173,7 @@ def interpolate_sky_measures(initial_values):
     on.
     At last the function interpolates from 0 to 360 for each zenith value. 
     
-    Keyword arguments:
+    Args:
         initial_values - The values to interpolate.
         
     Returns:
@@ -230,7 +230,7 @@ def prepare_interp_measures(interp_measures):
     """ Perform some manipulations on interpolated values necessary to get a
         good polar plot.
  
-    Keyword arguments:
+    Args:
         interp_measures - The interpolated values of the measures.
         
     Returns:
@@ -260,7 +260,7 @@ def prepare_interp_measures(interp_measures):
 def plot_polar(title, initial_values, progargs):
     """ Plot a polar plot with values received.
  
-    Keyword arguments:
+    Args:
         initial_values - The values to interpolate.
         title - The title of the figure to plot.
         progargs - program arguments. 
